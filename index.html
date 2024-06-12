@@ -8,8 +8,25 @@
     </head>
 <body>
         <main>
-            <button id="randomJokeButton">Blague aléatoire</button>
+            <h2>Blague aléatoire</h2>
+            <button id="randomJokeButton">Ha !</button>
             <div class="jokeDisplay" id="randomJokeResult"></div>
+
+            <h2>Toutes les blagues</h2>
+            <button id="allJokesButton">Ha Ha Ha !</button>
+            <div class="jokeDisplay" id="allJokesResult"></div>
+
+            <h2>Blague spécifique</h2>
+            <input type="text" name="jokeIdInput" id="specificJokeIdInput">
+            <button id="specificJokeButton">Par numéro</button>
+            <div class="jokeDisplay" id="specificJokeIdResult"></div>
+
+            <h2>Partagez votre blague préférée !</h2>
+            <form id="addJokeForm">
+                <input type="text" id="addJokeQuestion" name="question" placeholder="Comment appelle-t-on une chauve-souris avec une perruque?" required>
+                <input type="text" id="addJokeAnswer" name="reponse" placeholder="Une souris." required>
+                <button type="submit">Ajouter la blague</button>
+            </form>
         </main>
 </body>
 </html>
