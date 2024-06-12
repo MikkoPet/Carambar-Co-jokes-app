@@ -8,3 +8,10 @@ const {
 } = require('../controllers/jokeController');
 
 const router = express.Router();
+
+router.get('/', getAllJokes);
+router.get('/random', getRandomJoke);
+router.get('/:id', getJokeById);
+router.post('/', createNewJoke);
+
+modules.exports = router;
