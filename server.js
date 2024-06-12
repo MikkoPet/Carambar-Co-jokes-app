@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'))
 });
 
-app.use('api/jokes', jokeRoutes);
+app.use('/api/jokes', jokeRoutes);
 
 app.use(require('express').static('./'));
 
