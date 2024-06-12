@@ -14,4 +14,4 @@ router.get('/random', getRandomJoke);
 router.get('/:id', getJokeById);
 router.post('/', createNewJoke);
 
-modules.exports = router;
+module.exports = router;
