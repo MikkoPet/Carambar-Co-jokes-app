@@ -3,8 +3,8 @@ const app = express();
 
 const path = require('path');
 const jokeRoutes = require('./routes/jokeRoutes');
-/* const setUpSwagger = require('./swagger/swagger');
- */
+const setUpSwagger = require('./swagger');
+
 const PORT = process.env.PORT || 3000;
 
 //config
