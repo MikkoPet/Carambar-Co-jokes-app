@@ -8,7 +8,7 @@ const jokeRoutes = require('./routes/jokeRoutes');
 const PORT = process.env.PORT || 3000;
 
 //config
-/* setUpSwagger(app); */
+setUpSwagger(app);
 
 //middleware
 app.use(express.json());

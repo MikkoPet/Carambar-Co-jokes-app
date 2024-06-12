@@ -32,12 +32,18 @@ node server.js
 5. Accédez à l'application sur votre navigateur via:  
         - http://localhost:3000
 
+## Documentation de l'API
+
+L'API est documentée via Swagger. Pour y accéder, démarrez le serveur, puis accèdez à l'URL suivante:  
+        - http://localhost:3000/api-docs 
+
 ## Dépendences
 - Node.js
 - Express
 - Sequelize
 - SQLite
 - Render
+- Swagger
 
 ## Contribuer
 N'hésitez pas à formuler des **issues**, où même forke-r le repo pour soumettre toute contribution ! 
