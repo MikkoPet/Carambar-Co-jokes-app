@@ -1,0 +1,51 @@
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+body,
+article,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px
+}
+
+article {
+    margin: 35%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: Titan One;
+    color: rgb(233, 20, 101);
+    text-shadow: 2px 1px 0px white;
+    margin-bottom: 3vh;
+}
+
+button {
+    margin-left: 12vw;
+    margin-right: 12vw;
+    height: 60px;
+    background-color: rgb(255, 217, 0);
+    color: rgb(70, 7, 7);
+    font-family: lobster;
+    font-size: 1.3rem;
+    border: 0;
+    border-radius: 30px;
+    transition: all ease-in;
+}
+
+button:hover {
+    background-color: rgb(233, 20, 101);
+    color: white;
+}

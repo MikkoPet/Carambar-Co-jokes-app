@@ -3,24 +3,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les meilleures blagues de Carambar & Co.</title>
-<!--     <link href="./style.css" rel="stylesheet">
- -->  <script src="script.js" defer></script>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <script src="script.js" defer></script>
     </head>
 <body>
         <main>
+            <article>
             <h2>Blague aléatoire</h2>
             <button id="randomJokeButton">Ha !</button>
             <div class="jokeDisplay" id="randomJokeResult"></div>
+            </article>
 
+            <article>
             <h2>Toutes les blagues</h2>
             <button id="allJokesButton">Ha Ha Ha !</button>
             <div class="jokeDisplay" id="allJokesResult"></div>
+            </article>
 
+            <article>
             <h2>Blague spécifique</h2>
             <input type="text" name="jokeIdInput" id="specificJokeIdInput">
             <button id="specificJokeButton">Par numéro</button>
             <div class="jokeDisplay" id="specificJokeIdResult"></div>
+            </article>
 
+            <article>
             <h2>Partagez votre blague préférée !</h2>
             <form id="addJokeForm">
                 <input type="text" id="addJokeQuestion" name="question" placeholder="Comment appelle-t-on une chauve-souris avec une perruque?" required>
@@ -28,6 +37,7 @@
                 <button type="submit">Ajouter la blague</button>
             </form>
             <div id="addJokeResult"></div>
+            </article>
         </main>
 </body>
 </html>
