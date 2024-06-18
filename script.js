@@ -1,11 +1,11 @@
 document.getElementById('randomJokeButton').addEventListener('click', async () => {
-    const res = await fetch('/api/jokes/random');
+    const res = await fetch('https://carambar-co-jokes-app.onrender.com/api/jokes/random');
     const joke = await res.json();
     document.getElementById('randomJokeResult').innerText = `${joke.question}\n\n${joke.answer}`;
 });
 
 document.getElementById('allJokesButton').addEventListener('click', async () => {
-    const res = await fetch('/api/jokes/');
+    const res = await fetch('https://carambar-co-jokes-app.onrender.com/api/jokes/');
     const jokes = await res.json();
     let jokesHTML = '<table>';
     jokes.forEach(joke => {
@@ -20,7 +20,7 @@ document.getElementById('allJokesButton').addEventListener('click', async () => 
 
 document.getElementById('specificJokeButton').addEventListener('click', async () => {
     const jokeId = document.getElementById('specificJokeIdInput').value;
-    const res = await fetch(`/api/jokes/${jokeId}`);
+    const res = await fetch(`https://carambar-co-jokes-app.onrender.com/api/jokes/${jokeId}`);
     const joke = await res.json();
     document.getElementById('specificJokeIdResult').innerText = `${joke.question}\n\n${joke.answer}`;
 });
@@ -31,7 +31,7 @@ form.addEventListener('submit', async (event) => {
     const question = document.getElementById('addJokeQuestion').value;
     const answer = document.getElementById('addJokeAnswer').value;
     const joke = { question, answer };
-    const res = await fetch('/api/jokes', {
+    const res = await fetch('https://carambar-co-jokes-app.onrender.com/api/jokes', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

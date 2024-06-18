@@ -12,10 +12,16 @@ setUpSwagger(app);
 
 //middleware
 app.use(express.json());
-/* app.use(require('cors'));
- */
+const cors = require('cors');
+app.use(cors());
+const corsOptions = {
+    origin: 'http://localhost:3000/',
+    'Access-Control-Allow-Origin': '*',
+    optionsSuccessStatus: 200
+    }
 
-app.get('/', (req, res) => {
+
+app.get('/', cors(corsOptions), (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'))
 });
 
