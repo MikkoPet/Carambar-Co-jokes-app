@@ -30,7 +30,8 @@ node server.js
 ```
 
 5. Accédez à l'application sur votre navigateur via:  
-        - http://localhost:3000
+        - http://localhost:3000 (en local)  
+        - Où hébergé sur [RENDER](https://carambar-co-jokes-app.onrender.com/)
 
 ## Documentation de l'API
 
