@@ -63,3 +63,9 @@ input {
     border-radius: 14px;
     height: 30px
 }
+
+tr:nth-child(even) {
+    background-color: rgb(250, 229, 112);
+    color: rgb(233, 20, 101);
+
+}
